@@ -1484,7 +1484,7 @@ export default function AdmissionsView() {
                       <div className="space-y-5">
                         <div className="border-b-2 border-dashed border-gray-200 pb-3 flex justify-between items-center">
                           <div>
-                            <span className="text-[10px] uppercase font-bold text-brand-gold-dark font-mono block tracking-wider">Goldbridge Academy</span>
+                            <span className="text-[10px] uppercase font-bold text-brand-gold-dark font-mono block tracking-wider">Seed Academy</span>
                             <span className="font-extrabold text-sm block uppercase tracking-wide">Estimator Invoice Slip</span>
                           </div>
                           <span className={`text-[9px] font-mono font-bold uppercase tracking-widest px-2.5 py-1 rounded-md border ${
@@ -1590,7 +1590,7 @@ export default function AdmissionsView() {
               Boarding & Campus Hostel Wings
             </h2>
             <p className="text-xs md:text-sm text-gray-550 font-sans">
-              Discover a home away from home. Goldbridge Academy offers supportive, highly supervised, co-educational boarding options designed to foster moral integrity and self-reliance.
+              Discover a home away from home. Seed Academy offers supportive, highly supervised, co-educational boarding options designed to foster moral integrity and self-reliance.
             </p>
           </div>
 
@@ -2356,12 +2356,12 @@ export default function AdmissionsView() {
             <div className="flex items-center gap-2">
               <GraduationCap className="w-12 h-12 text-brand-blue font-bold" />
               <div>
-                <h1 className="text-2xl font-extrabold tracking-tight">GOLDBRIDGE ACADEMY</h1>
+                <h1 className="text-2xl font-extrabold tracking-tight">SEED ACADEMY</h1>
                 <p className="text-[9px] uppercase tracking-wider font-mono">Nurturing Intellect, Refining Character</p>
               </div>
             </div>
             <div className="text-right font-mono text-[9px] leading-tight text-gray-600">
-              <p>Form No: GDBG-ADM-2026</p>
+              <p>Form No: SEED-ADM-2026</p>
               <p>Class Session: 2026/2027</p>
               <p>Registry Office Lagos</p>
             </div>

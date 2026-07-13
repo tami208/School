@@ -39,11 +39,11 @@ export default function Footer({ setActiveTab }: FooterProps) {
                 <GraduationCap className="w-6 h-6" />
               </div>
               <span className="text-xl font-extrabold tracking-tight font-display">
-                GOLDBRIDGE <span className="text-brand-gold font-normal">ACADEMY</span>
+                SEED <span className="text-brand-gold font-normal">ACADEMY</span>
               </span>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed font-sans">
-              Goldbridge Academy prepares the next cohort of critical leaders. We combine rigorous global standards with character grooming from early age.
+              Seed Academy prepares the next cohort of critical leaders. We combine rigorous global standards with character grooming from early age.
             </p>
             <div className="flex items-center space-x-3 pt-2">
               <a 
@@ -193,7 +193,7 @@ export default function Footer({ setActiveTab }: FooterProps) {
 
         {/* Legal and Copyright bar */}
         <div className="pt-8 mt-12 border-t border-brand-blue-light/70 text-center text-xs text-gray-400 font-sans flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p>© {new Date().getFullYear()} Goldbridge Academy. All rights reserved. Registered Educational Inst.</p>
+          <p>© {new Date().getFullYear()} Seed Academy. All rights reserved. Registered Educational Inst.</p>
           <div className="flex space-x-6">
             <span className="hover:text-brand-gold cursor-pointer">Privacy Charter</span>
             <span className="hover:text-brand-gold cursor-pointer">Education Guidelines</span>

@@ -18,19 +18,19 @@ export const IMAGES = {
 };
 
 export const SCHOOL_INFO = {
-  name: 'Goldbridge Academy',
+  name: 'Seed Academy',
   slogan: 'Nurturing Intellect, Refining Character, Leading Change',
   established: '2005',
-  address: '12 Goldbridge Academic Way, Royal Estate, Suite A, Lagos, Nigeria',
+  address: '12 Seed Academic Way, Royal Estate, Suite A, Lagos, Nigeria',
   emergencyPhone: '+234 (0) 803 111 2222',
   generalPhone: '08147180263',
-  inquiryEmail: 'admissions@goldbridge.edu.ng',
-  adminEmail: 'info@goldbridge.edu.ng',
+  inquiryEmail: 'admissions@seed.edu.ng',
+  adminEmail: 'info@seed.edu.ng',
   socials: {
-    facebook: 'https://facebook.com/goldbridgeacademy',
-    twitter: 'https://twitter.com/goldbridge_academy',
-    instagram: 'https://instagram.com/goldbridgeacademy',
-    linkedin: 'https://linkedin.com/school/goldbridge-academy'
+    facebook: 'https://facebook.com/seedacademy',
+    twitter: 'https://twitter.com/seed_academy',
+    instagram: 'https://instagram.com/seedacademy',
+    linkedin: 'https://linkedin.com/school/seed-academy'
   },
   mission: 'To provide a world-class, rigorous, and holistic educational experience that equips young learners with critical thinking, ethical grounding, and leadership skills to excel globally.',
   vision: 'To be the continent’s premier educational beacon, where intellectual curiosity and moral uprightness converge to raise the leaders of tomorrow.',
@@ -40,7 +40,7 @@ export const SCHOOL_INFO = {
     { title: 'Disciplined Leadership', description: 'Taking responsibility for guiding peers and initiating social impact.' },
     { title: 'Global Outlook', description: 'Developing cultural awareness, bilingual foundations, and digital mastery.' }
   ],
-  history: 'Founded in 2005, Goldbridge Academy began as a visionary dream of leading educationists who wanted to revolutionize the local private schooling system. Over two decades, we expanded from initially running a single Kindergarten block to a massive, state-of-the-art campus spanning Nursery, Primary, Junior and Senior Secondary schools. With an unyielding commitment to combining international curriculum frameworks with native cultural standards, our graduates have successfully gained admissions to Ivy League, Russell Group, and prestigious domestic universities around the world.'
+  history: 'Founded in 2005, Seed Academy began as a visionary dream of leading educationists who wanted to revolutionize the local private schooling system. Over two decades, we expanded from initially running a single Kindergarten block to a massive, state-of-the-art campus spanning Nursery, Primary, Junior and Senior Secondary schools. With an unyielding commitment to combining international curriculum frameworks with native cultural standards, our graduates have successfully gained admissions to Ivy League, Russell Group, and prestigious domestic universities around the world.'
 };
 
 export const STATS: SchoolStat[] = [

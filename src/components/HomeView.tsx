@@ -70,7 +70,7 @@ export default function HomeView({ onLearnMoreAbout, onApplyPortal }: HomeViewPr
               Where Exceptional <span className="text-brand-gold">Leaders</span> Are Groomed
             </h1>
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed font-sans font-light">
-              Goldbridge Academy merges rigorous academic pathways with strict ethical frameworks, equipping young minds from Kindergarten to SS3 with tools to lead change.
+              Seed Academy merges rigorous academic pathways with strict ethical frameworks, equipping young minds from Kindergarten to SS3 with tools to lead change.
             </p>
             <div className="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <button 
@@ -97,8 +97,8 @@ export default function HomeView({ onLearnMoreAbout, onApplyPortal }: HomeViewPr
             <div className="relative rounded-2xl border-4 border-brand-blue-light shadow-2xl overflow-hidden aspect-[4/3]">
               {/* [IMAGE INSTALLED: Hero Campus Infrastructure Presentation Banner] */}
               <img 
-                src="/src/assets/images/school_hero_new_1782224558788.jpg" 
-                alt="Goldbridge Academy Campus Infrastructure Banner" 
+                src="https://imgur.com/o3qJpWa.png" 
+                alt="Seed Academy Campus Infrastructure Banner" 
                 className="w-full h-full object-cover rounded-xl shrink-0" 
                 referrerPolicy="no-referrer"
               />

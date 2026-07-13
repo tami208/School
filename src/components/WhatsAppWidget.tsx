@@ -43,7 +43,7 @@ export default function WhatsAppWidget() {
       waNumber = '234' + waNumber.substring(4);
     }
 
-    const prefixText = `Hello Goldbridge Academy ${currentDetails.name}! I am writing in regard to: ${message}`;
+    const prefixText = `Hello Seed Academy ${currentDetails.name}! I am writing in regard to: ${message}`;
     const targetUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(prefixText)}`;
     
     window.open(targetUrl, '_blank');
@@ -137,7 +137,7 @@ export default function WhatsAppWidget() {
         onClick={() => setIsOpen(!isOpen)}
         id="whatsapp-chat-float"
         className="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 hover:scale-105 active:scale-95 text-white flex items-center justify-center rounded-full shadow-2xl transition duration-200 cursor-pointer relative group"
-        aria-label="Chat with Goldbridge Academy representative"
+        aria-label="Chat with Seed Academy representative"
       >
         <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-20 animate-ping group-hover:hidden" />
         {isOpen ? <X className="w-6 h-6 animate-in spin-in-95 duration-150" /> : <MessageSquare className="w-6 h-6" />}

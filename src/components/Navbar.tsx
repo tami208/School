@@ -134,7 +134,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenSearch }: Navbar
               </div>
               <div>
                 <span className="block text-lg md:text-2xl font-extrabold text-brand-blue tracking-tight leading-tight group-hover:text-brand-blue-light transition">
-                  GOLDBRIDGE
+                  SEED
                   <span className="text-brand-gold font-normal font-display"> ACADEMY</span>
                 </span>
                 <span className="hidden sm:block text-[10px] text-gray-500 uppercase tracking-widest font-mono font-bold">
