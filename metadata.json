@@ -1,0 +1,6 @@
+{
+  "name": "Goldbridge Academy",
+  "description": "An elegant, professional, and fully responsive website for Goldbridge Academy, catering to Kindergarten, Nursery, Primary, JSS, and SSS students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
