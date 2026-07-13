@@ -23,7 +23,7 @@ export const SCHOOL_INFO = {
   established: '2005',
   address: '12 Goldbridge Academic Way, Royal Estate, Suite A, Lagos, Nigeria',
   emergencyPhone: '+234 (0) 803 111 2222',
-  generalPhone: '+234 (0) 805 333 4444',
+  generalPhone: '08147180263',
   inquiryEmail: 'admissions@goldbridge.edu.ng',
   adminEmail: 'info@goldbridge.edu.ng',
   socials: {

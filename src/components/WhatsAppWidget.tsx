@@ -32,9 +32,16 @@ export default function WhatsAppWidget() {
     e.preventDefault();
     if (!message.trim()) return;
 
-    const waNumber = selectedDept === 'admissions' 
+    let waNumber = selectedDept === 'admissions' 
       ? SCHOOL_INFO.generalPhone.replace(/[\s\(\)\+]/g, '') 
       : SCHOOL_INFO.emergencyPhone.replace(/[\s\(\)\+]/g, '');
+
+    // Convert leading '0' (for 11-digit local Nigerian numbers) to '234'
+    if (waNumber.startsWith('0') && waNumber.length === 11) {
+      waNumber = '234' + waNumber.substring(1);
+    } else if (waNumber.startsWith('2340') && waNumber.length === 14) {
+      waNumber = '234' + waNumber.substring(4);
+    }
 
     const prefixText = `Hello Goldbridge Academy ${currentDetails.name}! I am writing in regard to: ${message}`;
     const targetUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(prefixText)}`;

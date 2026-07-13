@@ -46,7 +46,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenSearch }: Navbar
 
   const navItems = [
     { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About Us' },
+    { id: 'about', label: 'change' },
     { id: 'academics', label: 'Academics' },
     { id: 'admissions', label: 'Admissions' },
     { id: 'student-life', label: 'Student Life' },

@@ -104,10 +104,24 @@ export default function ContactView() {
 
               <div className="flex gap-4 p-5 rounded-2xl bg-brand-gray border border-gray-150">
                 <Phone className="w-6 h-6 text-brand-gold shrink-0 mt-0.5" />
-                <div className="space-y-1">
-                  <h4 className="font-bold text-brand-blue text-sm uppercase font-mono">General Communications Desktop</h4>
-                  <p className="text-xs md:text-sm text-gray-650 leading-relaxed font-sans">{SCHOOL_INFO.generalPhone}</p>
-                  <p className="text-[10px] text-gray-400 font-mono">Available 8:00 AM – 4:00 PM (Monday-Friday)</p>
+                <div className="space-y-2 w-full">
+                  <div>
+                    <h4 className="font-bold text-brand-blue text-sm uppercase font-mono">General Communications Desktop</h4>
+                    <p className="text-xs md:text-sm text-gray-650 leading-relaxed font-sans">{SCHOOL_INFO.generalPhone}</p>
+                    <p className="text-[10px] text-gray-400 font-mono">Available 8:00 AM – 4:00 PM (Monday-Friday)</p>
+                  </div>
+                  <div className="pt-1">
+                    <a 
+                      href="https://wa.me/2348147180263" 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="inline-flex items-center gap-1.5 bg-green-600 text-white font-semibold text-xs px-3.5 py-2 rounded-xl hover:bg-green-700 active:scale-95 transition-all shadow-sm"
+                      id="contact-whatsapp-link"
+                    >
+                      <MessageSquare className="w-4 h-4" />
+                      <span>Chat on WhatsApp</span>
+                    </a>
+                  </div>
                 </div>
               </div>
 
