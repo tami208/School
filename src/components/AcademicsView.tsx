@@ -129,7 +129,7 @@ export default function AcademicsView({ selectedProgramId, setSelectedProgramId 
             <div className="p-4 bg-brand-gold/10 border border-brand-gold/20 rounded-2xl text-xs text-brand-blue/90 space-y-2">
               <span className="font-bold block text-brand-gold-dark">Curriculum Accords:</span>
               <p className="leading-relaxed text-gray-600">
-                Goldbridge Academy matches the Nigerian National Curriculum with prestigious British Early Years Foundation Stages (EYFS) standards.
+                Seed Academy matches the Nigerian National Curriculum with prestigious British Early Years Foundation Stages (EYFS) standards.
               </p>
             </div>
           </div>

@@ -28,11 +28,11 @@ export default function StaffSignInModal({ onClose }: StaffSignInModalProps) {
     setStatus('loading');
 
     setTimeout(() => {
-      // Allow any staff email ending in .ng or .com or @goldbridge
-      const isDomainOk = email.endsWith('.ng') || email.endsWith('.com') || email.includes('goldbridge');
+      // Allow any staff email ending in .ng or .com or @seed
+      const isDomainOk = email.endsWith('.ng') || email.endsWith('.com') || email.includes('seed');
       
       if (!isDomainOk) {
-        setErrorMsg('Access restricted. Please use an official @goldbridge.edu.ng or certified partner email.');
+        setErrorMsg('Access restricted. Please use an official @seed.edu.ng or certified partner email.');
         setStatus('error');
         return;
       }
@@ -46,7 +46,7 @@ export default function StaffSignInModal({ onClose }: StaffSignInModalProps) {
         time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
 
-      localStorage.setItem('goldbridge_staff_session', JSON.stringify(sessionData));
+      localStorage.setItem('seed_staff_session', JSON.stringify(sessionData));
       setLoggedInStaff(sessionData);
       setStatus('success');
       
@@ -60,7 +60,7 @@ export default function StaffSignInModal({ onClose }: StaffSignInModalProps) {
   };
 
   const handleSignOut = () => {
-    localStorage.removeItem('goldbridge_staff_session');
+    localStorage.removeItem('seed_staff_session');
     setLoggedInStaff(null);
     window.dispatchEvent(new Event('staff-login-change'));
     onClose();
@@ -68,7 +68,7 @@ export default function StaffSignInModal({ onClose }: StaffSignInModalProps) {
 
   // Check if already logged in on mount
   React.useEffect(() => {
-    const saved = localStorage.getItem('goldbridge_staff_session');
+    const saved = localStorage.getItem('seed_staff_session');
     if (saved) {
       try {
         setLoggedInStaff(JSON.parse(saved));
@@ -178,7 +178,7 @@ export default function StaffSignInModal({ onClose }: StaffSignInModalProps) {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="e.g. t.alao@goldbridge.edu.ng"
+                placeholder="e.g. t.alao@seed.edu.ng"
                 className="w-full bg-white border border-gray-200 rounded-xl py-3 pl-11 pr-4 outline-none text-brand-blue focus:border-brand-gold text-xs sm:text-sm"
                 required
                 disabled={status === 'loading'}

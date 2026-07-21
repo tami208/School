@@ -57,7 +57,7 @@ export default function StudentLifeView() {
 
   const sportMatches = [
     { title: 'Inter-House Soccer Tournament', date: 'July 15, 2026', location: 'Main Athletic Grounds', type: 'Football' },
-    { title: 'Goldbridge Swim Gala Final', date: 'July 28, 2026', location: 'Olympic Swim Centre', type: 'Swimming' },
+    { title: 'Seed Swim Gala Final', date: 'July 28, 2026', location: 'Olympic Swim Centre', type: 'Swimming' },
     { title: 'Secondary Basketball League (SS1-SS3)', date: 'August 05, 2026', location: 'Indoor Sports courts', type: 'Basketball' }
   ];
 
@@ -140,7 +140,7 @@ export default function StudentLifeView() {
             <div className="space-y-4">
               <span className="text-brand-gold font-mono font-bold text-[10px] uppercase tracking-wider block">Athletics & physical focus</span>
               <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight font-display uppercase leading-tight text-brand-gold-light">
-                Goldbridge Sports & Athleticism
+                Seed Sports & Athleticism
               </h3>
               <p className="text-xs md:text-sm text-gray-300 leading-relaxed font-sans">
                 A sound mind resides within a sound body. Physical trainers handle safe cardio and teamwork habits inside our central football courts, tennis networks, and semi-Olympic size swimming pool area.

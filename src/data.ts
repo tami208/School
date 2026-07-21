@@ -176,7 +176,7 @@ export const ACADEMIC_PROGRAMS: AcademicProgram[] = [
       'Implement a highly structured social entrepreneurship enterprise project in communities.'
     ],
     extracurriculars: [
-      'Press Club & Goldbridge Editorial Magazine Board',
+      'Press Club & Seed Editorial Magazine Board',
       'The Elite Coding Group & App Development Syndicate',
       'Varsity Athletics & Basketball Elite Squad'
     ],
@@ -221,7 +221,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Engr. & Mrs. Adebayo Alao',
     role: 'Parent',
     relationship: 'Parents of Tolu (SS3) & Tobi (JSS1)',
-    quote: 'Sending our children to Goldbridge Academy remains the single best investment we have made. The high-powered STEM classes and focus on discipline transformed our son into a coding champion!',
+    quote: 'Sending our children to Seed Academy remains the single best investment we have made. The high-powered STEM classes and focus on discipline transformed our son into a coding champion!',
     avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80'
   },
   {
@@ -229,7 +229,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Amina Danjuma',
     role: 'Alumni',
     relationship: 'Class of 2023, currently studying Medicine at UCL',
-    quote: 'The WAEC prep bootcamps at Goldbridge and constant mock examinations did not just help me score straight As, they built my mental endurance for the heavy workload of college medical studies.',
+    quote: 'The WAEC prep bootcamps at Seed and constant mock examinations did not just help me score straight As, they built my mental endurance for the heavy workload of college medical studies.',
     avatarUrl: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=150&q=80'
   },
   {
@@ -245,11 +245,11 @@ export const TESTIMONIALS: Testimonial[] = [
 export const NEWS: NewsAnnouncement[] = [
   {
     id: 'news-1',
-    title: 'Goldbridge Robogroup Clinches First Place in National STEM Olympiad',
+    title: 'Seed Robogroup Clinches First Place in National STEM Olympiad',
     category: 'Event',
     date: 'June 18, 2026',
     excerpt: 'Our Junior Secondary robotics squad beats 45 schools to win the national innovation trophy in automatic drone guidance algorithms.',
-    content: 'On the 15th of June, the Goldbridge Academy Robotics group displayed state-of-the-art programming skills by designing a fully autonomous drone capable of dodging physical obstacles and executing micro-deliveries. Coached by Mr. David Sterling, the boys and girls took home the gold cup, demonstrating our world-class hands-on science and technology edge.'
+    content: 'On the 15th of June, the Seed Academy Robotics group displayed state-of-the-art programming skills by designing a fully autonomous drone capable of dodging physical obstacles and executing micro-deliveries. Coached by Mr. David Sterling, the boys and girls took home the gold cup, demonstrating our world-class hands-on science and technology edge.'
   },
   {
     id: 'news-2',
@@ -280,7 +280,7 @@ export const FAQS: FAQItem[] = [
     id: 'faq-2',
     category: 'Admissions',
     question: 'Is there a sibling discount available on fees?',
-    answer: 'Yes! Goldbridge Academy offers a 10% discount on the tuition fee component for the second child, and 15% for the third and subsequent children enrolled simultaneously.'
+    answer: 'Yes! Seed Academy offers a 10% discount on the tuition fee component for the second child, and 15% for the third and subsequent children enrolled simultaneously.'
   },
   {
     id: 'faq-3',
@@ -297,7 +297,7 @@ export const FAQS: FAQItem[] = [
   {
     id: 'faq-5',
     category: 'Student Life',
-    question: 'What sports options do students have at Goldbridge?',
+    question: 'What sports options do students have at Seed?',
     answer: 'Our sports infrastructure includes a standard Olympic swimming pool, synthetic grass soccer field, basketball courts, and indoor arenas for table tennis, gymnastics, and dynamic martial arts programs.'
   }
 ];

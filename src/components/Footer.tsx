@@ -160,7 +160,7 @@ export default function Footer({ setActiveTab }: FooterProps) {
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                 <div>
                   <span className="font-semibold block text-white">Successfully Subscribed!</span>
-                  Welcome to Goldbridge Dispatch list.
+                  Welcome to Seed Dispatch list.
                 </div>
               </div>
             ) : (

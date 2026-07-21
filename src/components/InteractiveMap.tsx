@@ -52,7 +52,7 @@ export default function InteractiveMap() {
     },
     {
       id: 'zone-4',
-      name: 'Goldbridge Memorial Arena & Swim Center',
+      name: 'Seed Memorial Arena & Swim Center',
       description: 'Our sports infrastructure base: Semi-Olympic size heated swimming pool, 300-seater stadium stands, indoor table tennis deck, synthetic football fields, and double basketball courts.',
       coordinator: 'Coach Festus Okoye',
       capacity: '440 Athletes',

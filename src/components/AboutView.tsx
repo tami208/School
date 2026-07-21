@@ -26,7 +26,7 @@ const GALLERY_IMAGES: GalleryImage[] = [
   {
     url: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600',
     category: 'Campus & Labs',
-    title: 'Goldbridge Research Library',
+    title: 'Seed Research Library',
     description: 'Quiet study capsules hosting 30,000+ curriculum volumes and online papers.'
   },
   {
@@ -75,7 +75,7 @@ const GALLERY_IMAGES: GalleryImage[] = [
     url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=600',
     category: 'Academic Events',
     title: 'Auditorium Spelling Bee',
-    description: 'A suspenseful, competitive termly language test in Goldbridge assembly hall.'
+    description: 'A suspenseful, competitive termly language test in Seed assembly hall.'
   },
   {
     url: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600',
@@ -201,7 +201,7 @@ export default function AboutView() {
               Our Leadership Board
             </h3>
             <p className="text-xs md:text-sm text-gray-500 leading-relaxed font-sans">
-              Goldbridge Academy’s administrative projects are guided by internationally certified educators holding honors from elite global institutes.
+              Seed Academy’s administrative projects are guided by internationally certified educators holding honors from elite global institutes.
             </p>
           </div>
 
@@ -304,7 +304,7 @@ export default function AboutView() {
             </div>
 
             <div className="flex justify-between items-center text-xs font-mono text-gray-400 pt-3 border-t border-gray-100">
-              <span>Goldbridge Staff Board</span>
+              <span>Seed Staff Board</span>
               <button 
                 onClick={() => setSelectedStaffId(null)}
                 className="bg-brand-blue hover:bg-brand-blue-light text-white font-bold px-6 py-2 rounded-lg text-xs"
@@ -326,7 +326,7 @@ export default function AboutView() {
               <div className="flex items-center gap-2">
                 <Image className="w-5 h-5 text-brand-gold animate-pulse" />
                 <h3 className="text-lg md:text-xl font-extrabold tracking-tight font-display text-brand-blue uppercase">
-                  Goldbridge Academy Gallery
+                  Seed Academy Gallery
                 </h3>
               </div>
               <button 
@@ -408,8 +408,8 @@ export default function AboutView() {
 
             {/* Bottom Footer block */}
             <div className="flex justify-between items-center text-[10px] font-mono text-gray-400 pt-3 border-t border-gray-100">
-              <span>Goldbridge Interactive Media Center</span>
-              <span>© {new Date().getFullYear()} Goldbridge Academy</span>
+              <span>Seed Interactive Media Center</span>
+              <span>© {new Date().getFullYear()} Seed Academy</span>
             </div>
             
           </div>

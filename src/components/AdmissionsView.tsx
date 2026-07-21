@@ -31,10 +31,10 @@ import { FAQS, TUITION_FEES } from '../data';
 
 // Device ID isolation helper
 const getDeviceId = () => {
-  let id = localStorage.getItem('goldbridge_device_id');
+  let id = localStorage.getItem('seed_device_id');
   if (!id) {
     id = 'dev-' + Math.random().toString(36).substring(2, 11) + '-' + Date.now().toString(36);
-    localStorage.setItem('goldbridge_device_id', id);
+    localStorage.setItem('seed_device_id', id);
   }
   return id;
 };
@@ -64,7 +64,7 @@ export default function AdmissionsView() {
 
   // New differentiated Day vs Boarding inquiry state fields
   const [admissionType, setAdmissionType] = useState<'Day' | 'Boarding'>('Day');
-  const [boardingHousePreference, setBoardingHousePreference] = useState('Goldbridge Manor (Boys)');
+  const [boardingHousePreference, setBoardingHousePreference] = useState('Seed Manor (Boys)');
   const [localGuardianName, setLocalGuardianName] = useState('');
   const [localGuardianPhone, setLocalGuardianPhone] = useState('');
   const [dietaryRestrictions, setDietaryRestrictions] = useState('');
@@ -94,7 +94,7 @@ export default function AdmissionsView() {
   const [paymentMethod, setPaymentMethod] = useState('Bank Transfer');
   const [paymentDivision, setPaymentDivision] = useState('Primary 1');
   const [paymentBoarding, setPaymentBoarding] = useState(false);
-  const [paymentAccount, setPaymentAccount] = useState('Access Bank (Goldbridge Main - 1029384756)');
+  const [paymentAccount, setPaymentAccount] = useState('Access Bank (Seed Main - 1029384756)');
   const [paymentStatus, setPaymentStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
   const [paymentReference, setPaymentReference] = useState('');
 
@@ -137,7 +137,7 @@ export default function AdmissionsView() {
   // Load and refresh data
   const loadData = async () => {
     // Check staff session
-    const savedStaff = localStorage.getItem('goldbridge_staff_session');
+    const savedStaff = localStorage.getItem('seed_staff_session');
     let staffObj = null;
     if (savedStaff) {
       try {
@@ -283,7 +283,7 @@ export default function AdmissionsView() {
         setPhone('');
         setNotes('');
         setApplyBoarding(false);
-        setBoardingHousePreference('Goldbridge Manor (Boys)');
+        setBoardingHousePreference('Seed Manor (Boys)');
         setLocalGuardianName('');
         setLocalGuardianPhone('');
         setDietaryRestrictions('');
@@ -321,9 +321,9 @@ export default function AdmissionsView() {
         studentGender,
         studentAge: Number(studentAge) || 6
       };
-      const savedInquiries = JSON.parse(localStorage.getItem('goldbridge_inquiries') || '[]');
+      const savedInquiries = JSON.parse(localStorage.getItem('seed_inquiries') || '[]');
       const updated = [fallbackInq, ...savedInquiries];
-      localStorage.setItem('goldbridge_inquiries', JSON.stringify(updated));
+      localStorage.setItem('seed_inquiries', JSON.stringify(updated));
       setMyInquiries(updated);
 
       setSubmissionCode(code);
@@ -337,7 +337,7 @@ export default function AdmissionsView() {
       setPhone('');
       setNotes('');
       setApplyBoarding(false);
-      setBoardingHousePreference('Goldbridge Manor (Boys)');
+      setBoardingHousePreference('Seed Manor (Boys)');
       setLocalGuardianName('');
       setLocalGuardianPhone('');
       setDietaryRestrictions('');
@@ -484,14 +484,14 @@ export default function AdmissionsView() {
   ];
 
   const officialAccounts = [
-    { bank: 'Access Bank', accountName: 'Goldbridge Academy Main', accountNumber: '1029384756', purpose: 'Tuition & Academic Fees' },
-    { bank: 'GTBank', accountName: 'Goldbridge Academy Fees', accountNumber: '0987654321', purpose: 'Nursery & Early Years' },
-    { bank: 'Zenith Bank', accountName: 'Goldbridge Boarding Wing', accountNumber: '5060708090', purpose: 'Boarding & Hostel Residency' }
+    { bank: 'Access Bank', accountName: 'Seed Academy Main', accountNumber: '1029384756', purpose: 'Tuition & Academic Fees' },
+    { bank: 'GTBank', accountName: 'Seed Academy Fees', accountNumber: '0987654321', purpose: 'Nursery & Early Years' },
+    { bank: 'Zenith Bank', accountName: 'Seed Boarding Wing', accountNumber: '5060708090', purpose: 'Boarding & Hostel Residency' }
   ];
 
   return (
     <div className="w-full font-sans text-brand-blue bg-white py-12 md:py-16">
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-16">
+      <div className="max-w-[96rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 space-y-16">
         
         {/* Title Segment */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
@@ -698,7 +698,7 @@ export default function AdmissionsView() {
                         {(selectedInq.isBoarding || selectedInq.admissionType === 'Boarding') ? (
                           <div className="p-3 bg-indigo-50/50 rounded-xl border border-indigo-150 space-y-1.5 text-[11px] text-gray-700 text-left">
                             <p className="font-extrabold text-indigo-800 text-[10px] uppercase tracking-wide">Boarding Student Details:</p>
-                            <p><strong>Hostel Preference:</strong> {selectedInq.boardingHousePreference || 'Goldbridge Manor (Boys)'}</p>
+                            <p><strong>Hostel Preference:</strong> {selectedInq.boardingHousePreference || 'Seed Manor (Boys)'}</p>
                             <p><strong>Local Guardian:</strong> {selectedInq.localGuardianName || 'N/A'}</p>
                             <p><strong>Guardian Phone:</strong> {selectedInq.localGuardianPhone || 'N/A'}</p>
                             <p><strong>Dietary Restrictions:</strong> {selectedInq.dietaryRestrictions || 'None Declared'}</p>
@@ -1062,7 +1062,7 @@ export default function AdmissionsView() {
                               placeholder="e.g. Room 104, Sterling Block"
                               className="w-full bg-slate-50 border border-gray-200 rounded-lg p-2.5 outline-none font-semibold text-brand-blue focus:border-brand-gold"
                             />
-                            <p className="text-[10px] text-indigo-500 italic">Preferred House: {selectedAdmitted.boardingHousePreference || 'Goldbridge Boys House'}</p>
+                            <p className="text-[10px] text-indigo-500 italic">Preferred House: {selectedAdmitted.boardingHousePreference || 'Seed Boys House'}</p>
                           </div>
                         )}
                       </div>
@@ -1176,7 +1176,9 @@ export default function AdmissionsView() {
               </button>
             </div>
           </div>
-            {/* 2. TUITION FEES MATRIX */}
+        </div>
+
+        {/* 2. TUITION FEES MATRIX */}
         <div className="space-y-8 pt-6" id="fees-section">
           <div className="text-center max-w-xl mx-auto space-y-2">
             <span className="inline-block bg-brand-gold/10 text-brand-gold-dark text-[10px] uppercase font-mono px-3 py-1 rounded-full font-bold">Fiscal Transparency</span>
@@ -1206,7 +1208,7 @@ export default function AdmissionsView() {
           </div>
 
           {/* Granular Table */}
-          <div className="max-w-8xl mx-auto bg-white border border-gray-150 rounded-3xl overflow-hidden shadow-lg">
+          <div className="max-w-none w-full bg-white border border-gray-150 rounded-3xl overflow-hidden shadow-lg">
             <div className="max-w-full overflow-x-auto no-scrollbar">
               <table className="w-full text-left font-sans min-w-[650px] lg:min-w-full lg:table-fixed">
                 <thead className="bg-brand-blue text-white uppercase font-mono font-bold tracking-wider text-[11px] border-b-2 border-brand-gold">
@@ -1257,7 +1259,7 @@ export default function AdmissionsView() {
           </div>
 
           {/* INTERACTIVE FEE CALCULATOR & SIBLING PLANNER */}
-          <div className="max-w-8xl mx-auto bg-gradient-to-br from-brand-blue to-brand-blue-dark text-white rounded-[32px] p-8 md:p-12 space-y-8 shadow-2xl text-left relative overflow-hidden border border-white/10">
+          <div className="max-w-none w-full bg-gradient-to-br from-brand-blue to-brand-blue-dark text-white rounded-[32px] p-8 md:p-12 lg:p-16 space-y-10 shadow-2xl text-left relative overflow-hidden border border-white/10">
             <div className="absolute top-0 right-0 w-72 h-72 bg-brand-gold/5 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
             
@@ -1376,7 +1378,7 @@ export default function AdmissionsView() {
                       Sibling Rebate Discount (10% Off Tuition Component)
                     </label>
                     <span className="text-xs text-gray-300 block leading-relaxed">
-                      Toggle active if you have another child currently registered or studying inside Goldbridge Academy divisions.
+                      Toggle active if you have another child currently registered or studying inside Seed Academy divisions.
                     </span>
                   </div>
                 </div>
@@ -1391,7 +1393,7 @@ export default function AdmissionsView() {
                     {/* Shuttle selection */}
                     <div className="space-y-1.5">
                       <label className="text-[11px] uppercase tracking-wide text-gray-300 font-bold block">
-                        Goldbridge Secure Shuttle Transit
+                        Seed Secure Shuttle Transit
                       </label>
                       <select
                         value={calcTransport}
@@ -1580,7 +1582,7 @@ export default function AdmissionsView() {
               </div>
             </div>
           </div>
-        </div>      </div>
+        </div>
 
         {/* 3. NEW SECTION: BOARDING HOUSES & RESIDENCY */}
         <div id="boarding-section" className="space-y-8 pt-6">
@@ -1606,7 +1608,7 @@ export default function AdmissionsView() {
                 Separate girls' and boys' wings featuring fully air-conditioned rooms, individual reading desks, secure lockboxes, and high-speed water systems supervised by 24/7 resident housemasters.
               </p>
               <div className="border-t pt-2.5 font-mono text-[10px] text-brand-gold-dark font-bold">
-                WINGS: Goldbridge Manor & Alao House
+                WINGS: Seed Manor & Alao House
               </div>
             </div>
 
@@ -1872,7 +1874,7 @@ export default function AdmissionsView() {
                         onChange={(e) => setBoardingHousePreference(e.target.value)}
                         className="bg-white border border-gray-200 rounded-lg p-2.5 outline-none text-brand-blue focus:border-brand-gold text-xs sm:text-sm font-semibold"
                       >
-                        <option value="Goldbridge Manor (Boys)">Goldbridge Manor (Boys Dormitory)</option>
+                        <option value="Seed Manor (Boys)">Seed Manor (Boys Dormitory)</option>
                         <option value="Alao House (Girls)">Alao House (Girls Dormitory)</option>
                       </select>
                     </div>
@@ -2188,9 +2190,9 @@ export default function AdmissionsView() {
                     onChange={(e) => setPaymentAccount(e.target.value)}
                     className="bg-white border border-gray-200 rounded-lg p-3 outline-none text-brand-blue focus:border-brand-gold text-xs font-semibold"
                   >
-                    <option value="Access Bank (Goldbridge Main - 1029384756)">Access Bank — Main Tuition</option>
-                    <option value="GTBank (Goldbridge Fees - 0987654321)">GTBank — Early Years</option>
-                    <option value="Zenith Bank (Goldbridge Boarding - 5060708090)">Zenith Bank — Boarding Wing</option>
+                    <option value="Access Bank (Seed Main - 1029384756)">Access Bank — Main Tuition</option>
+                    <option value="GTBank (Seed Fees - 0987654321)">GTBank — Early Years</option>
+                    <option value="Zenith Bank (Seed Boarding - 5060708090)">Zenith Bank — Boarding Wing</option>
                   </select>
                 </div>
 

@@ -17,7 +17,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenSearch }: Navbar
 
   useEffect(() => {
     const checkStaffSession = () => {
-      const saved = localStorage.getItem('goldbridge_staff_session');
+      const saved = localStorage.getItem('seed_staff_session');
       if (saved) {
         try {
           setStaffSession(JSON.parse(saved));
@@ -93,7 +93,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenSearch }: Navbar
                 </span>
                 <button 
                   onClick={() => {
-                    localStorage.removeItem('goldbridge_staff_session');
+                    localStorage.removeItem('seed_staff_session');
                     window.dispatchEvent(new Event('staff-login-change'));
                   }}
                   className="text-gray-300 hover:text-red-400 font-semibold transition cursor-pointer flex items-center gap-1"
@@ -242,7 +242,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenSearch }: Navbar
                     </div>
                     <button
                       onClick={() => {
-                        localStorage.removeItem('goldbridge_staff_session');
+                        localStorage.removeItem('seed_staff_session');
                         window.dispatchEvent(new Event('staff-login-change'));
                       }}
                       className="w-full py-2 bg-red-50 hover:bg-red-100 text-red-600 font-bold rounded-md transition text-center cursor-pointer flex items-center justify-center gap-1.5"
